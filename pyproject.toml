@@ -2,5 +2,9 @@
 name = "data-structures-impl"
 version = "0.1.0"
 description = "Implementation of data structures in Python"
+authors = ["Jesús Andrés Hincapié"]
 requires-python = ">=3.12"
 dependencies = []
+license = "MIT"
+license-files = ["LICENSE"]
+
