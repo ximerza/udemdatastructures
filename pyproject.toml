@@ -2,9 +2,21 @@
 name = "data-structures-impl"
 version = "0.1.0"
 description = "Implementation of data structures in Python"
-authors = ["Jesús Andrés Hincapié"]
+authors = [
+    { name="Jesús Andrés Hincapié", email="jahlon@gmail.com" }
+]
 requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+]
 dependencies = []
 license = "MIT"
 license-files = ["LICENSE"]
+readme = "README.md"
 
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
