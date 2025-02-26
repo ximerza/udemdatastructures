@@ -1,21 +1,22 @@
 [project]
-name = "data-structures-impl"
+name = "datastructures"
 version = "0.1.0"
 description = "Implementation of data structures in Python"
-authors = [
-    { name="Jesús Andrés Hincapié", email="jahlon@gmail.com" }
-]
-requires-python = ">=3.12"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Development Status :: 3 - Alpha",
-]
-dependencies = []
-license = "MIT"
-license-files = ["LICENSE"]
 readme = "README.md"
+authors = [
+    { name = "Jesus Hincapie", email = "jahlon@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-file = "LICENSE"
+keywords = ["data structures", "python", "algorithms"]
 
 [build-system]
 requires = ["hatchling"]
