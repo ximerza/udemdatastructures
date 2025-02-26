@@ -1,5 +1,5 @@
 [project]
-name = "datastructures"
+name = "udemdatastructures"
 version = "0.1.0"
 description = "Implementation of data structures in Python"
 readme = "README.md"
@@ -24,5 +24,5 @@ build-backend = "hatchling.build"
 
 [[tool.uv.index]]
 name = "testpypi"
-url = "https://test.pypi.org/cscourse-datastructures/"
+url = "https://test.pypi.org/udemdatastructures/"
 publish-url = "https://test.pypi.org/legacy/"
