@@ -1,24 +1,12 @@
-from inspect import stack
-
 from stack import ArrayStack
 
-def is_matched_html(html: str) -> bool:
-    stack = ArrayStack[str]()
-    j = html.find("<")
-    while j != -1:
-        k = html.find(">", j + 1)
-        if k == -1:
-            return False
+def reverse_data(archivo_stack):
+    pila = ArrayStack()
+    with open(archivo_stack, 'r') as archivo:
+        for linea in archivo:
+            pila.push(linea.strip())
 
-        tag = html[j +1:k]
+    while not pila.is_empty():
+        print((pila.pop()))
 
-        if not tag.startswith("/"):
-            stack.push(tag)
-        else:
-            if stack.is_empty():
-                return False
-            if tag[1:] != stack.pop():
-                return False
-        j = html.find("<", k +1)
-
-    return stack.is_empty()
+print(reverse_data("archivo_stack"))
