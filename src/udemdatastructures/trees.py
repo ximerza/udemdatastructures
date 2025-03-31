@@ -78,3 +78,26 @@ class BinarySearchTree[T]:
         result += "\n" + "   " * level + str(node.data)
         result += self._print(node.left, level +1)
         return result
+
+    def search(self, goal: Any) -> Node | None:
+        return self._search(self.root, goal)
+
+    def _search(self, node: Node, goal: Any) -> Node | None:
+        if node is None or self.key(goal) == self.key(node.data):
+            return node
+
+        if self.key(goal) < self.key(node.data):
+            return self._search(node.left, goal)
+
+        return self._search(node.right, goal)
+
+    def height(self) -> int:
+        return self._height(self.root)
+
+    def _height(self, node: Node | None) -> int:
+        if node is None:
+            return -1
+        left_height = self._height(node.left)
+        right_height = self._height(node.right)
+        return max(left_height, right_height) + 1
+
